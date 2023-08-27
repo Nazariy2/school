@@ -1,236 +1,62 @@
-:root {
-  --link-color:#fff;
-  --link-color:#2196F3;
-  --link-color:#2F303A;
+.lesson-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
-
-.header_item {
-    font-family: 'Barriecito', cursive;
-font-family: 'Bilbo Swash Caps', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-}
-
-.header_list {
-    list-style-type: none ;
-}
-
-.header_a{
-    text-decoration: none;
-}
-
-li{
-    margin-right: 50px;
-}
-
-
-.header_list {
+ul {
+    list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .header_item {
-    list-style: none;
-    margin-right: 93px; /* Distanza tra primo e secondo elemento */
-  }
-  
-  .header_item:nth-child(2) {
-    margin-right: 93px; /* Distanza tra secondo e terzo elemento */
-  }
-  
-  .header_item:nth-child(3) {
-    margin-right: 50px; /* Distanza tra terzo e quarto elemento */
-  }
-  
-  .header_item:nth-child(4) {
-    margin-right: 344px; /* Distanza tra quarto e quinto elemento */
-  }
-  
-  .header_item:nth-child(5) {
-    margin-right: 50px; /* Distanza tra quinto e sesto elemento */
-  }
-  
-  .header_item:last-child {
-    margin-right: 0; /* Rimuovi la distanza dopo l'ultimo elemento */
-  }
-
-  .header_h1 {
-    color: #fff;
-text-align: center;
-font-family: Roboto;
-font-size: 44px;
-font-style: normal;
-font-weight: 900;
-line-height: 60px; /* 136.364% */
-letter-spacing: 2.64px;
-text-transform: uppercase;
-  
 }
 
-.header_button{
-    color: #FFF;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 187.5% */
-letter-spacing: 0.96px;
-border-radius: 4px;
-background: #2196F3;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-width: 216px;
-height: 50px;
-flex-shrink: 0;
-
-}
-
-.mini_container{
-    background-color: #2F303A; width: 1600px; height: 600px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.main_list {
-  padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 30px;
-}
-
-.main_item {
-  color: #212121;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
+li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
 
-.list_main {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  display: flex;
-    justify-content: space-between;
-    margin: 0 30px;
+li:hover {
+    background-color: #f0f0f0;
 }
 
-.item_main {
-  color: #757575;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-letter-spacing: 0.42px;
+li:active {
+    background-color: #ddd;
 }
 
-.main_h1 {
-  color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+li:focus {
+    outline: none;
+    border-color: blue;
 }
 
-.main_img {
-  width: 370px;
-height: 294px;
-
-
+li:checked {
+    background-color: lightgreen;
 }
 
-.main_h2 {
-  color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+li::before {
+    content: "•";
+    margin-right: 5px;
 }
 
 
-.img_main {
-  width: 270px;
-height: 260px;
-
+ul:nth-child(1) li {
+    color: blue;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
- 
-    
+ul:nth-child(2) li {
+    color: green;
 }
 
-.list_item {
-  color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.48px;
-word-spacing: 80px;
-background-color: #FFF;
+ul:nth-child(3) li {
+    color: orange;
 }
 
-section{
-  background-color: #ffffff;width: 1600px;
-  height: 648px;
-  flex-shrink: 0;
+ul:nth-child(4) li {
+    color: purple;
 }
 
-.list_item1 {
-  color: #757575;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
-}
-
-.footer_item {
-  color: rgba(255, 255, 255, 0.60);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
-width: 231px;
-height: 21px;
-flex-shrink: 0;
-}
-
-footer {
-  background-color: #2F303A;
+ul:nth-child(5) li {
+    color: red;
 }
